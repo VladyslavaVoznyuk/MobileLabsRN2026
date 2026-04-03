@@ -41,7 +41,7 @@ const initialChallenges: Challenge[] = [
   { id: 'c6', icon: '👈', title: 'Swipe left', desc: 'Perform a quick swipe left gesture', target: 1, type: 'swipesLeft', current: 0 },
   { id: 'c7', icon: '🤏', title: 'Pinch to resize', desc: 'Use pinch gesture to resize the clicker', target: 1, type: 'pinches', current: 0 },
   { id: 'c8', icon: '🏆', title: 'Reach 100 points', desc: 'Score a total of 100 points', target: 100, type: 'score', current: 0 },
-  { id: 'c9', icon: '🌟', title: 'Gesture master', desc: 'Use all 5 different gesture types at least once', target: 5, type: 'uniqueGestures', current: 0 },
+  { id: 'c9', icon: '🤏', title: 'Pinch master', desc: 'Use pinch gesture at least 2 times', target: 2, type: 'pinches', current: 0 },
 ];
 
 function createInitialState(): GameState {
@@ -135,9 +135,9 @@ export function GameProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <GameContext.Provider value={{ state, addScore, resetGame }}>
-      {children}
-    </GameContext.Provider>
+      <GameContext.Provider value={{ state, addScore, resetGame }}>
+        {children}
+      </GameContext.Provider>
   );
 }
 

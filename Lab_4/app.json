@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "FileOS",
+    "slug": "fileos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0F"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0F"
+      },
+      "permissions": []
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "plugins": [
+      "expo-file-system"
+    ],
+    "newArchEnabled": true
+  }
+}
